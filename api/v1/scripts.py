@@ -6,7 +6,7 @@ from api.v1.schemas import ScriptsResponse, ScriptEntry
 
 router = APIRouter(
     prefix="/scripts",
-    tags=["Scripts - 스크립트"]
+    tags=["Scripts"]
 )
 
 

@@ -4,6 +4,8 @@ from api.v1.users import router as users_router
 from api.v1.files import router as files_router
 from api.v1.scripts import router as scripts_router
 from api.v1.voice import router as voice_router
+from api.v1.speech_scripts import router as speech_scripts_router
+from api.v1.practice_scores import router as practice_scores_router
 
 # FastAPI 앱 객체, Swagger 등 글로벌 설정만 담당
 app = FastAPI(
@@ -33,6 +35,10 @@ app.include_router(files_router, prefix="/api/v1")
 app.include_router(scripts_router, prefix="/api/v1")
 # 보이스 클로닝 라우터 등록
 app.include_router(voice_router, prefix="/api/v1")
+# 발표 대본 관리 라우터 등록
+app.include_router(speech_scripts_router, prefix="/api/v1")
+# 연습 점수 관리 라우터 등록
+app.include_router(practice_scores_router, prefix="/api/v1")
  
 # 서버 상태 확인 API
 @app.get("/", tags=["General"], summary="서버 상태 확인")
