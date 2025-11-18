@@ -29,164 +29,164 @@
 **3. 핵심내용**
 
 -----------------------------------------------------------------------
-| **서비스 개요**                                                       |
-|                                                                       |
-| 사용자의 목소리를 AI로 복제(Voice Cloning)하여, 해당 목소리로 생성된  |
-| '최적의 발표 음성 예시'를 가이드로 삼아 연습하는 **정량적 데이터 기반 |
-| 발표 교정 웹 서비스**                                                 |
-|                                                                       |
-| **맞춤형 AI 보이스 가이드 생성 및 활용**                              |
-|                                                                       |
-| 1\. 적합 음성 녹음 유도 : 최초 보이스 클로닝 시, 시스템이 발표에      |
-| 적합한 기준 음성을 제공. 사용자가 이를 듣고 발음, 말 빠르기, 높낮이   |
-| 변화를 의식하며 녹음하게 함으로써 고품질의 학습 데이터를 확보.        |
-|                                                                       |
-| 2\. 맞춤 음성 Voice ID 생성 : 녹음된 음성 파일을 기반으로 AI 모델     |
-| 서비스(Supertone Play)를 활용, 사용자 고유의 맞춤 음성 Voice ID를     |
-| 생성.                                                                 |
-|                                                                       |
-| 3\. 최적 가이드 음성 생성 : 사용자가 연습할 대본을 입력하면, 사용자의 |
-| Voice ID를 바탕으로 해당 대본을 가장 이상적으로 낭독하는 가이드 음성  |
-| 파일을 생성.                                                          |
-|                                                                       |
-| 4\. 비교 기반 연습 : 사용자는 자신의 목소리로 생성된 예시를 반복      |
-| 청취하고 따라하며 연습 효과를 극대화.                                 |
-|                                                                       |
-| **4개의 지표 기반 정량적 분석 및 피드백**                             |
-|                                                                       |
-| 사용자의 연습 음성을 AI가 실시간으로 분석하여 4가지 핵심 지표에 대한  |
-| 객관적인 피드백을 제공.                                               |
-|                                                                       |
-| ① 말 빠르기 (SPM) : (음성 데이터 길이 / 대본 음절 수) 비율을 통해     |
-| SPM(분당 음절 수)을 계산. 기준값(가이드 음성)과 비교하여 빠름/느림을  |
-| 판단.                                                                 |
-|                                                                       |
-| ② 목소리 크기 (Volume) : 음량평준화 전처리 후 입력 음성의 단어별      |
-| RMS(Root Mean Square)를 분석, 가이드 음성과 입력값의 Dynamic Range를  |
-| 비교하여 판단.                                                        |
-|                                                                       |
-| ③ 목소리 음정 (Pitch) : 음성 음성의 단어별 음정(Hz)을 분석, 가이드    |
-| 음성 대비 음정 변화 판단.                                             |
-|                                                                       |
-| ④ 발음 정확도 (Pronunciation) : 사용자 음성을 STT(Speech-to-Text)로   |
-| 텍스트 변환 후, 원본 대본과의 텍스트 일치도를 분석하여                |
-| 정확함/부정확함을 판단.                                               |
-+-----------------------------------------------------------------------+
+ **서비스 개요**                                                       
+                                                                       
+ 사용자의 목소리를 AI로 복제(Voice Cloning)하여, 해당 목소리로 생성된  
+ '최적의 발표 음성 예시'를 가이드로 삼아 연습하는 **정량적 데이터 기반 
+ 발표 교정 웹 서비스**                                                 
+                                                                       
+ **맞춤형 AI 보이스 가이드 생성 및 활용**                              
+                                                                       
+ 1\. 적합 음성 녹음 유도 : 최초 보이스 클로닝 시, 시스템이 발표에      
+ 적합한 기준 음성을 제공. 사용자가 이를 듣고 발음, 말 빠르기, 높낮이   
+ 변화를 의식하며 녹음하게 함으로써 고품질의 학습 데이터를 확보.        
+                                                                       
+ 2\. 맞춤 음성 Voice ID 생성 : 녹음된 음성 파일을 기반으로 AI 모델     
+ 서비스(Supertone Play)를 활용, 사용자 고유의 맞춤 음성 Voice ID를     
+ 생성.                                                                 
+                                                                       
+ 3\. 최적 가이드 음성 생성 : 사용자가 연습할 대본을 입력하면, 사용자의 
+ Voice ID를 바탕으로 해당 대본을 가장 이상적으로 낭독하는 가이드 음성  
+ 파일을 생성.                                                          
+                                                                       
+ 4\. 비교 기반 연습 : 사용자는 자신의 목소리로 생성된 예시를 반복      
+ 청취하고 따라하며 연습 효과를 극대화.                                 
+                                                                       
+ **4개의 지표 기반 정량적 분석 및 피드백**                             
+                                                                       
+ 사용자의 연습 음성을 AI가 실시간으로 분석하여 4가지 핵심 지표에 대한  
+ 객관적인 피드백을 제공.                                               
+                                                                       
+ ① 말 빠르기 (SPM) : (음성 데이터 길이 / 대본 음절 수) 비율을 통해     
+ SPM(분당 음절 수)을 계산. 기준값(가이드 음성)과 비교하여 빠름/느림을  
+ 판단.                                                                 
+                                                                       
+ ② 목소리 크기 (Volume) : 음량평준화 전처리 후 입력 음성의 단어별      
+ RMS(Root Mean Square)를 분석, 가이드 음성과 입력값의 Dynamic Range를  
+ 비교하여 판단.                                                        
+                                                                       
+ ③ 목소리 음정 (Pitch) : 음성 음성의 단어별 음정(Hz)을 분석, 가이드    
+ 음성 대비 음정 변화 판단.                                             
+                                                                       
+ ④ 발음 정확도 (Pronunciation) : 사용자 음성을 STT(Speech-to-Text)로   
+ 텍스트 변환 후, 원본 대본과의 텍스트 일치도를 분석하여                
+ 정확함/부정확함을 판단.                                               
+-----------------------------------------------------------------------
 
 **4. 제안배경 및 목적**
 
-+-----------------------------------------------------------------------+
-| **배경 조사 및 분석**                                                 |
-|                                                                       |
-| \- 현대 사회에서 발표는 단순한 전달을 넘어 자기 표현력과 전문성을     |
-| 보여주는 핵심 역량. 특히 대학생, 취준생, 직장인 모두가 자기소개, PT,  |
-| 면접, 발표 평가 등 다양한 상황에서 발표 능력을 요구받음.              |
-|                                                                       |
-| \- 링크드인(LinkedIn) 2024년 보고서 기준, \'커뮤니케이션\'이 고용주가 |
-| 가장 요구하는 기술 1위 선정.                                          |
-|                                                                       |
-| \[\^https://connect.na.panasonic.                                     |
-| com/blog/av/proav/communication-hits-no-1-spot-as-in-demand-skill-in- |
-| 20                                                                    |
-| 24-says-linkedin\^\](https://connect.na.panasonic.com/blog/av/proav/c |
-| ommunication-hits-no-1-spot-as-in-demand-skill-in-2024-says-linkedin) |
-|                                                                       |
-| \[^[https://www.prnewswire.com/news-releases/c\ omm                   |
-| unication-tops-the-list-of-most-in-demand-skills-in-2024-302137607\ . |
-| html]{.underline}^\](https://www.prnewswire.com/news-releases/communi |
-| cation-tops-the-list-of-most-in-demand-skills-in-2024-302137607.html) |
-|                                                                       |
-| \- 채용 관리자의 59%가 지원자의 대중 연설 능력을 중요한 평가 요소로   |
-| 고려.                                                                 |
-|                                                                       |
-| \[[^1]{.underl                                                        |
-| in                                                                    |
-| e}\^\](https://novoresume.com/career-blog/public-speaking-statistics) |
-|                                                                       |
-| \[^[https://market.biz/public-speaking-stati\ s                       |
-| tics/]{.underline}^\](https://market.biz/public-speaking-statistics/) |
-|                                                                       |
-| \- 임원의 62%는 프레젠테이션 기술을 리더십의 최우선 역량으로 간주함   |
-|                                                                       |
-| \[^[https://market.biz/public-speaking-stati\ s                       |
-| tics/]{.underline}^\](https://market.biz/public-speaking-statistics/) |
-|                                                                       |
-| \- 다수의 현대인이 발표에 대한 불안을 경험하며, 이는 학업 성취 및     |
-| 직무 능력 평가에 큰 영향을 미침.                                      |
-|                                                                       |
-| \- 전체 인구의 약 75%가 발표 불안(Glossophobia)을 겪고 있으며, 이는   |
-| 대중 연설을 죽음보다 더 두려워한다는 통계와 연결됨.                   |
-|                                                                       |
-| \[\^                                                                  |
-| \[                                                                    |
-| https://www.crossrivertherapy.com/public-speaking-statistics\]{.under |
-| li                                                                    |
-| ne}\^\](https://www.crossrivertherapy.com/public-speaking-statistics) |
-|                                                                       |
-| \[^[https://www.mciworldwide.com/2024/12/10/06-12-2024-to\ day        |
-| s-insights-on-public-speaking-from-harvard-business-review-to-beco\ m |
-| e-a-better-presenter-look-inward/]{.underline}^\](https://www.mciworl |
-| dwide.com/2024/12/10/06-12-2024-todays-insights-on-public-speaking-fr |
-| om-harvard-business-review-to-become-a-better-presenter-look-inward/) |
-|                                                                       |
-| \- 대학생의 약 61%가 발표를 가장 큰 두려움으로 꼽음.                  |
-|                                                                       |
-| ^[https://pmc.ncbi.nlm.nih.gov/articles/PMC12592063/]{.underline}^    |
-|                                                                       |
-| \- 기존의 스피치 학원, 1:1 컨설팅 등은 높은 비용, 시간적/공간적       |
-| 제약(오프라인)이라는 진입 장벽이 존재.                                |
-|                                                                       |
-| \- 영상 촬영 등 셀프 연습 방식과 주변인의 의견에 의존하는 방식        |
-| 객관적인 피드백을 얻기 어려워 한계가 명확.                            |
-|                                                                       |
-| **문제인식**                                                          |
-|                                                                       |
-| \- 발표 능력 향상을 위해서는 객관적 데이터에 기반한 지속적인 피드백이 |
-| 필수적임.                                                             |
-|                                                                       |
-| \- 기존 솔루션은 이러한 객관성과 접근성을 동시에 충족시키지 못하고    |
-| 있음.                                                                 |
-|                                                                       |
-| **페르소나**                                                          |
-|                                                                       |
-| 1\. 이름 : 김OO (24세, 대학생)                                        |
-|                                                                       |
-| 2\. 상황 : 중요한 졸업 작품 발표 및 하반기 취업 면접을 동시에 준비    |
-| 중임.                                                                 |
-|                                                                       |
-| 3\. Pain Point : \"발표 시 말이 너무 빠르다는 지적을 자주 받음. 혼자  |
-| 연습할 때는 얼마나 빠른지, 어떻게 고쳐야 할지 감이 오지 않아 답답함.  |
-| 전문 학원은 회당 10만 원이 넘어 경제적으로 부담됨.\"                  |
-|                                                                       |
-| 4\. Needs : 비용 부담 없이 매일 연습하고 싶음. 조금 더 구체적인       |
-| 수치적인 피드백을 원함.                                               |
-|                                                                       |
-| **개발 목적**                                                         |
-|                                                                       |
-| 상기 문제의식 하에, SFITZ는 기존 발표 연습 솔루션의 한계를 기술적으로 |
-| 극복하는 것을 목적으로 함.                                            |
-|                                                                       |
-| 1\. 객관성 확보 : 말 빠르기(SPM), 음정(Hz), 볼륨(RMS), 발음           |
-| 정확도라는 4대 지표를 통해 주관성을 배제한 정량적 피드백을 제공.      |
-|                                                                       |
-| 2\. 접근성 극대화 : PC/모바일 반응형 웹을 통해 시공간 제약 없이       |
-| 누구나 합리적인 비용으로 훈련할 수 있는 환경을 제공.                  |
-|                                                                       |
-| 3\. 개인화된 연습 환경 제공 : 타인의 음성이 아닌, AI로 복제된 자신의  |
-| 이상적인 목소리를 가이드로 제공하여 심리적 이질감은 낮추고 훈련       |
-| 효과는 극대화하는 가장 효율적인 솔루션을 제공.                        |
-|                                                                       |
-| **핵심 가치**                                                         |
-|                                                                       |
-| 객관성 : SPM(음절/분), RMS(음성 볼륨), Hz(음정), STT 결과와 텍스트의  |
-| 일치도 등 정량적 데이터로만 피드백.                                   |
-|                                                                       |
-| 사용자 친화성 : 타인의 목소리가 아닌 자신의 목소리를 벤치마킹하여     |
-| 심리적 이질감을 최소화하고 연습 효과를 극대화.                        |
-|                                                                       |
-| 접근성 : PC와 모바일 웹을 통해 언제 어디서나 연습 가능하며, 기존      |
-| 오프라인 교육 대비 압도적으로 접근성이 높음.                          |
-+-----------------------------------------------------------------------+
+-----------------------------------------------------------------------
+ **배경 조사 및 분석**                                                 
+                                                                       
+ \- 현대 사회에서 발표는 단순한 전달을 넘어 자기 표현력과 전문성을     
+ 보여주는 핵심 역량. 특히 대학생, 취준생, 직장인 모두가 자기소개, PT,  
+ 면접, 발표 평가 등 다양한 상황에서 발표 능력을 요구받음.              
+                                                                       
+ \- 링크드인(LinkedIn) 2024년 보고서 기준, \'커뮤니케이션\'이 고용주가 
+ 가장 요구하는 기술 1위 선정.                                          
+                                                                       
+ \[\^https://connect.na.panasonic.                                     
+ com/blog/av/proav/communication-hits-no-1-spot-as-in-demand-skill-in- 
+ 20                                                                    
+ 24-says-linkedin\^\](https://connect.na.panasonic.com/blog/av/proav/c 
+ ommunication-hits-no-1-spot-as-in-demand-skill-in-2024-says-linkedin) 
+                                                                       
+ \[^[https://www.prnewswire.com/news-releases/c\ omm                   
+ unication-tops-the-list-of-most-in-demand-skills-in-2024-302137607\ . 
+ html]{.underline}^\](https://www.prnewswire.com/news-releases/communi 
+ cation-tops-the-list-of-most-in-demand-skills-in-2024-302137607.html) 
+                                                                       
+ \- 채용 관리자의 59%가 지원자의 대중 연설 능력을 중요한 평가 요소로   
+ 고려.                                                                 
+                                                                       
+ \[[^1]{.underl                                                        
+ in                                                                    
+ e}\^\](https://novoresume.com/career-blog/public-speaking-statistics) 
+                                                                       
+ \[^[https://market.biz/public-speaking-stati\ s                       
+ tics/]{.underline}^\](https://market.biz/public-speaking-statistics/) 
+                                                                       
+ \- 임원의 62%는 프레젠테이션 기술을 리더십의 최우선 역량으로 간주함   
+                                                                       
+ \[^[https://market.biz/public-speaking-stati\ s                       
+ tics/]{.underline}^\](https://market.biz/public-speaking-statistics/) 
+                                                                       
+ \- 다수의 현대인이 발표에 대한 불안을 경험하며, 이는 학업 성취 및     
+ 직무 능력 평가에 큰 영향을 미침.                                      
+                                                                       
+ \- 전체 인구의 약 75%가 발표 불안(Glossophobia)을 겪고 있으며, 이는   
+ 대중 연설을 죽음보다 더 두려워한다는 통계와 연결됨.                   
+                                                                       
+ \[\^                                                                  
+ \[                                                                    
+ https://www.crossrivertherapy.com/public-speaking-statistics\]{.under 
+ li                                                                    
+ ne}\^\](https://www.crossrivertherapy.com/public-speaking-statistics) 
+                                                                       
+ \[^[https://www.mciworldwide.com/2024/12/10/06-12-2024-to\ day        
+ s-insights-on-public-speaking-from-harvard-business-review-to-beco\ m 
+ e-a-better-presenter-look-inward/]{.underline}^\](https://www.mciworl 
+ dwide.com/2024/12/10/06-12-2024-todays-insights-on-public-speaking-fr 
+ om-harvard-business-review-to-become-a-better-presenter-look-inward/) 
+                                                                       
+ \- 대학생의 약 61%가 발표를 가장 큰 두려움으로 꼽음.                  
+                                                                       
+ ^[https://pmc.ncbi.nlm.nih.gov/articles/PMC12592063/]{.underline}^    
+                                                                       
+ \- 기존의 스피치 학원, 1:1 컨설팅 등은 높은 비용, 시간적/공간적       
+ 제약(오프라인)이라는 진입 장벽이 존재.                                
+                                                                       
+ \- 영상 촬영 등 셀프 연습 방식과 주변인의 의견에 의존하는 방식        
+ 객관적인 피드백을 얻기 어려워 한계가 명확.                            
+                                                                       
+ **문제인식**                                                          
+                                                                       
+ \- 발표 능력 향상을 위해서는 객관적 데이터에 기반한 지속적인 피드백이 
+ 필수적임.                                                             
+                                                                       
+ \- 기존 솔루션은 이러한 객관성과 접근성을 동시에 충족시키지 못하고    
+ 있음.                                                                 
+                                                                       
+ **페르소나**                                                          
+                                                                       
+ 1\. 이름 : 김OO (24세, 대학생)                                        
+                                                                       
+ 2\. 상황 : 중요한 졸업 작품 발표 및 하반기 취업 면접을 동시에 준비    
+ 중임.                                                                 
+                                                                       
+ 3\. Pain Point : \"발표 시 말이 너무 빠르다는 지적을 자주 받음. 혼자  
+ 연습할 때는 얼마나 빠른지, 어떻게 고쳐야 할지 감이 오지 않아 답답함.  
+ 전문 학원은 회당 10만 원이 넘어 경제적으로 부담됨.\"                  
+                                                                       
+ 4\. Needs : 비용 부담 없이 매일 연습하고 싶음. 조금 더 구체적인       
+ 수치적인 피드백을 원함.                                               
+                                                                       
+ **개발 목적**                                                         
+                                                                       
+ 상기 문제의식 하에, SFITZ는 기존 발표 연습 솔루션의 한계를 기술적으로 
+ 극복하는 것을 목적으로 함.                                            
+                                                                       
+ 1\. 객관성 확보 : 말 빠르기(SPM), 음정(Hz), 볼륨(RMS), 발음           
+ 정확도라는 4대 지표를 통해 주관성을 배제한 정량적 피드백을 제공.      
+                                                                       
+ 2\. 접근성 극대화 : PC/모바일 반응형 웹을 통해 시공간 제약 없이       
+ 누구나 합리적인 비용으로 훈련할 수 있는 환경을 제공.                  
+                                                                       
+ 3\. 개인화된 연습 환경 제공 : 타인의 음성이 아닌, AI로 복제된 자신의  
+ 이상적인 목소리를 가이드로 제공하여 심리적 이질감은 낮추고 훈련       
+ 효과는 극대화하는 가장 효율적인 솔루션을 제공.                        
+                                                                       
+ **핵심 가치**                                                         
+                                                                       
+ 객관성 : SPM(음절/분), RMS(음성 볼륨), Hz(음정), STT 결과와 텍스트의  
+ 일치도 등 정량적 데이터로만 피드백.                                   
+                                                                       
+ 사용자 친화성 : 타인의 목소리가 아닌 자신의 목소리를 벤치마킹하여     
+ 심리적 이질감을 최소화하고 연습 효과를 극대화.                        
+                                                                       
+ 접근성 : PC와 모바일 웹을 통해 언제 어디서나 연습 가능하며, 기존     
+ 오프라인 교육 대비 압도적으로 접근성이 높음.                         
+-----------------------------------------------------------------------
 
 **5. 세부내용**
 
