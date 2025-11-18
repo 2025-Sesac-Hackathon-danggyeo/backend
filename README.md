@@ -42,12 +42,10 @@
  변화를 의식하며 녹음하게 함으로써 고품질의 학습 데이터를 확보.        
                                                                        
  2\. 맞춤 음성 Voice ID 생성 : 녹음된 음성 파일을 기반으로 AI 모델     
- 서비스(Supertone Play)를 활용, 사용자 고유의 맞춤 음성 Voice ID를     
- 생성.                                                                 
+ 서비스(Supertone Play)를 활용, 사용자 고유의 맞춤 음성 Voice ID를 생성.                                                                 
                                                                        
  3\. 최적 가이드 음성 생성 : 사용자가 연습할 대본을 입력하면, 사용자의 
- Voice ID를 바탕으로 해당 대본을 가장 이상적으로 낭독하는 가이드 음성  
- 파일을 생성.                                                          
+ Voice ID를 바탕으로 해당 대본을 가장 이상적으로 낭독하는 가이드 음성 파일을 생성.                                                          
                                                                        
  4\. 비교 기반 연습 : 사용자는 자신의 목소리로 생성된 예시를 반복      
  청취하고 따라하며 연습 효과를 극대화.                                 
@@ -58,8 +56,7 @@
  객관적인 피드백을 제공.                                               
                                                                        
  ① 말 빠르기 (SPM) : (음성 데이터 길이 / 대본 음절 수) 비율을 통해     
- SPM(분당 음절 수)을 계산. 기준값(가이드 음성)과 비교하여 빠름/느림을  
- 판단.                                                                 
+ SPM(분당 음절 수)을 계산. 기준값(가이드 음성)과 비교하여 빠름/느림을 판단.                                                                 
                                                                        
  ② 목소리 크기 (Volume) : 음량평준화 전처리 후 입력 음성의 단어별      
  RMS(Root Mean Square)를 분석, 가이드 음성과 입력값의 Dynamic Range를  
@@ -85,31 +82,21 @@
  \- 링크드인(LinkedIn) 2024년 보고서 기준, \'커뮤니케이션\'이 고용주가 
  가장 요구하는 기술 1위 선정.                                          
                                                                        
- \[\^https://connect.na.panasonic.                                     
- com/blog/av/proav/communication-hits-no-1-spot-as-in-demand-skill-in- 
- 20                                                                    
- 24-says-linkedin\^\](https://connect.na.panasonic.com/blog/av/proav/c 
- ommunication-hits-no-1-spot-as-in-demand-skill-in-2024-says-linkedin) 
+ \[\^https://connect.na.panasonic.com/blog/av/proav/communication-hits-no-1-spot-as-in-demand-skill-in-20                                                                    
+ 24-says-linkedin\^\](https://connect.na.panasonic.com/blog/av/proav/communication-hits-no-1-spot-as-in-demand-skill-in-2024-says-linkedin) 
                                                                        
- \[^[https://www.prnewswire.com/news-releases/c\ omm                   
- unication-tops-the-list-of-most-in-demand-skills-in-2024-302137607\ . 
- html]{.underline}^\](https://www.prnewswire.com/news-releases/communi 
- cation-tops-the-list-of-most-in-demand-skills-in-2024-302137607.html) 
+ \[^[https://www.prnewswire.com/news-releases/c\ommunication-tops-the-list-of-most-in-demand-skills-in-2024-302137607\.
+html]{.underline}^\](https://www.prnewswire.com/news-releases/communication-tops-the-list-of-most-in-demand-skills-in-2024-302137607.html) 
                                                                        
- \- 채용 관리자의 59%가 지원자의 대중 연설 능력을 중요한 평가 요소로   
- 고려.                                                                 
+ \- 채용 관리자의 59%가 지원자의 대중 연설 능력을 중요한 평가 요소로 고려.                                                                 
                                                                        
- \[[^1]{.underl                                                        
- in                                                                    
- e}\^\](https://novoresume.com/career-blog/public-speaking-statistics) 
+ \[[^1]{.underline}\^\](https://novoresume.com/career-blog/public-speaking-statistics) 
                                                                        
- \[^[https://market.biz/public-speaking-stati\ s                       
- tics/]{.underline}^\](https://market.biz/public-speaking-statistics/) 
+ \[^[https://market.biz/public-speaking-stati\stics/]{.underline}^\](https://market.biz/public-speaking-statistics/) 
                                                                        
  \- 임원의 62%는 프레젠테이션 기술을 리더십의 최우선 역량으로 간주함   
                                                                        
- \[^[https://market.biz/public-speaking-stati\ s                       
- tics/]{.underline}^\](https://market.biz/public-speaking-statistics/) 
+ \[^[https://market.biz/public-speaking-stati\stics/]{.underline}^\](https://market.biz/public-speaking-statistics/) 
                                                                        
  \- 다수의 현대인이 발표에 대한 불안을 경험하며, 이는 학업 성취 및     
  직무 능력 평가에 큰 영향을 미침.                                      
@@ -117,17 +104,9 @@
  \- 전체 인구의 약 75%가 발표 불안(Glossophobia)을 겪고 있으며, 이는   
  대중 연설을 죽음보다 더 두려워한다는 통계와 연결됨.                   
                                                                        
- \[\^                                                                  
- \[                                                                    
- https://www.crossrivertherapy.com/public-speaking-statistics\]{.under 
- li                                                                    
- ne}\^\](https://www.crossrivertherapy.com/public-speaking-statistics) 
+ \[\^\[https://www.crossrivertherapy.com/public-speaking-statistics\]{.underline}\^\](https://www.crossrivertherapy.com/public-speaking-statistics) 
                                                                        
- \[^[https://www.mciworldwide.com/2024/12/10/06-12-2024-to\ day        
- s-insights-on-public-speaking-from-harvard-business-review-to-beco\ m 
- e-a-better-presenter-look-inward/]{.underline}^\](https://www.mciworl 
- dwide.com/2024/12/10/06-12-2024-todays-insights-on-public-speaking-fr 
- om-harvard-business-review-to-become-a-better-presenter-look-inward/) 
+ \[^[https://www.mciworldwide.com/2024/12/10/06-12-2024-to\days-insights-on-public-speaking-from-harvard-business-review-to-beco\me-a-better-presenter-look-inward/]{.underline}^\](https://www.mciworldwide.com/2024/12/10/06-12-2024-todays-insights-on-public-speaking-from-harvard-business-review-to-become-a-better-presenter-look-inward/) 
                                                                        
  \- 대학생의 약 61%가 발표를 가장 큰 두려움으로 꼽음.                  
                                                                        
@@ -141,11 +120,9 @@
                                                                        
  **문제인식**                                                          
                                                                        
- \- 발표 능력 향상을 위해서는 객관적 데이터에 기반한 지속적인 피드백이 
- 필수적임.                                                             
+ \- 발표 능력 향상을 위해서는 객관적 데이터에 기반한 지속적인 피드백이 필수적임.                                                             
                                                                        
- \- 기존 솔루션은 이러한 객관성과 접근성을 동시에 충족시키지 못하고    
- 있음.                                                                 
+ \- 기존 솔루션은 이러한 객관성과 접근성을 동시에 충족시키지 못하고 있음.                                                                 
                                                                        
  **페르소나**                                                          
                                                                        
@@ -190,180 +167,180 @@
 
 **5. 세부내용**
 
-+-----------------------------------------------------------------------+
-| **활용 데이터 및 AI 모델**                                            |
-|                                                                       |
-| \- 활용 데이터                                                        |
-|                                                                       |
-| 1.  1\. 사용자 초기 녹음 음성 (보이스 클로닝 학습용)                  |
-|                                                                       |
-|     2\. 사용자 연습 녹음 음성 (정량 분석용)                           |
-|                                                                       |
-|     3\. 사용자 입력 대본 텍스트 (가이드 생성 및 발음 비교용)          |
-|                                                                       |
-| \- AI 모델                                                            |
-|                                                                       |
-| 4.  1\. 보이스 클로닝 (Voice Cloning): Supertone Play API             |
-|                                                                       |
-|     1.  고품질 Voice ID 생성 및 대본 기반 가이드 음성 합성.           |
-|                                                                       |
-|     2\. STT (Speech-to-Text): returnzero RTZR STT API (Sommers)       |
-|                                                                       |
-|     1.  사용자 연습 음성을 텍스트로 변환                              |
-|                                                                       |
-| **서비스 방법**                                                       |
-|                                                                       |
-| 1\. 온보딩 및 로그인 (Onboarding & Login/Logout)                      |
-|                                                                       |
-| 6.  서비스 핵심 기능 소개 및 JWT(JSON Web Token) 기반의 사용자 인증   |
-|     처리.                                                             |
-|                                                                       |
-| 2\. 보이스클로닝 녹음 (Voice Cloning Page)                            |
-|                                                                       |
-| 7.  고품질의 음성 데이터 확보가 핵심.                                 |
-|                                                                       |
-|     단순 녹음이 아닌, 시스템이 제공하는 기준 음성(적절한 빠르기,      |
-|     높낮이)을 사용자가 듣고 따라 녹음하도록 유도.                     |
-|                                                                       |
-| 3\. 발표 업로드 (Main Page)                                           |
-|                                                                       |
-| 9.  사용자가 연습하고자 하는 발표 대본(스크립트)을 텍스트로           |
-|     입력하거나 파일로 업로드.                                         |
-|                                                                       |
-| 4\. 가이드 생성 및 연습 (Main Page - Practice):                       |
-|                                                                       |
-| 10. 시스템이 업로드된 대본과 사용자의 Voice ID를 결합하여 가이드 음성 |
-|     파일을 생성 (AWS S3 저장).                                        |
-|                                                                       |
-|     사용자는 이 가이드 음성을 들으며 연습 음성을 녹음.                |
-|                                                                       |
-| 5\. 정량 분석 리포트 (Main Page - Feedback)                           |
-|                                                                       |
-| 12. 녹음 완료 시, 시스템이 이하의 핵심 분석 로직 및 구현 원리에 따라  |
-|     연습 음성을 분석하여 4대 지표 리포트를 제공.                      |
-|                                                                       |
-| **적용 기술**                                                         |
-|                                                                       |
-| Frontend                                                              |
-|                                                                       |
-| \- React (PC/모바일 반응형 웹 퍼블리싱)                               |
-|                                                                       |
-| Backend                                                               |
-|                                                                       |
-| \- FastAPI (Python 기반 고성능 API 서버)                              |
-|                                                                       |
-| \- FastDTW (시계열 데이터간의 유사도 파악을 위한 Python 라이브러리)   |
-|                                                                       |
-| \- Parselmouth (Praat 소프트웨어 Python 라이브러리)                   |
-|                                                                       |
-| \- Librosa (오디오 신호처리를 위한 Python 라이브러리)                 |
-|                                                                       |
-| \- Difflib (문자열 유사도 비교를 위한 Python 라이브러리)              |
-|                                                                       |
-| Database                                                              |
-|                                                                       |
-| \- AWS RDS (사용자 정보, 대본 메타데이터 등 관리)                     |
-|                                                                       |
-| Infra                                                                 |
-|                                                                       |
-| \- AWS EC2 (서버 배포), AWS S3 (음성 파일 등 스토리지)                |
-|                                                                       |
-| AI (Core)                                                             |
-|                                                                       |
-| \- Supertone Play (Voice Cloning), returnzero RTZR STT (STT)          |
-|                                                                       |
-| Auth                                                                  |
-|                                                                       |
-| \- JWT (사용자 인증)                                                  |
-|                                                                       |
-| **핵심 분석 로직 및 구현 원리**                                       |
-|                                                                       |
-| 외부 AI API와 Python 코드를 결합하여 4대 지표를 아래의 방식으로 산출. |
-|                                                                       |
-| \- 구간별 정밀 분석                                                   |
-|                                                                       |
-| STT 엔진(ReturnZero)에서 반환된 단어별 타임스탬프를 기준으로 오디오   |
-| 파일을 슬라이싱하여                                                   |
-|                                                                       |
-| 특정 단어에서의 음정과 볼륨 변화를 별개로 측정 가능하게 함.           |
-|                                                                       |
-| \- 음향 지표 정량화                                                   |
-|                                                                       |
-| 음정 : DTW, Parselmouth 라이브러리를 사용해 오디오의 프레임별         |
-| 주파수를 분석하고, 무성음(0Hz) 구간을 제외한 유성음 구간의 평균 F0를  |
-| 계산하여 음높이 도출.                                                 |
-|                                                                       |
-| 음량 : 음량 평준화 전처리 후 Librosa 라이브러리를 통해 오디오 파형의  |
-| RMS(Root Mean Square) 값을 계산하여 발성의 에너지 크기 수치화.        |
-|                                                                       |
-| 말 빠르기 : STT엔진으로 도출한 음성 지속 시간과 공백을 제외한 대본의  |
-| 실질 음절 수를 연산하여 분당 발화 속도 측정.                          |
-|                                                                       |
-| 발음 정확도 : Difflib 라이브러리를 활용, 원본 대본과 사용자 발화 간의 |
-| 텍스트 유사도를 비교하여 정확, 오발음, 누락 여부를 단어 단위로 판별.  |
-|                                                                       |
-| **창의성 및 구현 가능성**                                             |
-|                                                                       |
-| 1\. 창의성                                                            |
-|                                                                       |
-| \- 진단을 넘어 맞춤형 처방 제공 **:** 대부분의 스피치 앱이 \'당신은   |
-| 말이 빠릅니다\'라는 진단에 그치는 반면, SFITZ는 \'이 대본은 이 정도   |
-| 속도로 읽어야 합니다\'라는 내 목소리 기반의 최적 예시를 AI로 생성하여 |
-| 제공.                                                                 |
-|                                                                       |
-| \- 심리적 저항감 해소 :** **타인의 모범 음성이나 기계음이 아닌,       |
-| 자신의 가장 이상적인 목소리를 가이드로 사용. 이는 사용자의 심리적     |
-| 저항감을 최소화하고, \'나도 이렇게 할 수 있다\'는 동기를 부여하여     |
-| 연습 몰입도를 극대화.                                                 |
-|                                                                       |
-| 2\. 구현 가능성                                                       |
-|                                                                       |
-| \- 검증된 상용 AI API 활용                                            |
-|                                                                       |
-| Supertone Play, returnzero RTZR STT 등 이미 상용화되어 성능이 검증된  |
-| AI API를 활용. 복잡한 AI 모델을 직접 개발하는 리스크 없이, 핵심       |
-| 기능인 \'음성 합성\'과 \'음성 인식\'을 안정적으로 구현.               |
-|                                                                       |
-| \- 효율적인 개발 스택                                                 |
-|                                                                       |
-| Backend (FastAPI) : Python 기반으로 AI API 연동(HTTP 요청)에          |
-| 최적화되어 있으며, 비동기 처리를 통해 다수의 음성 분석 요청을         |
-| 효율적으로 처리.                                                      |
-|                                                                       |
-| Infra (AWS EC2/S3) : 표준화된 클라우드 인프라를 사용. EC2는 FastAPI   |
-| 서버를, S3는 사용자의 녹음 파일, 생성된 가이드 음성 등 대용량 오디오  |
-| 파일을 안정적으로 저장/관리하는 데 사용.                              |
-|                                                                       |
-| \- 확장성을 고려한 DB 설계 (AWS RDS)                                  |
-|                                                                       |
-| 공모전 단계에 맞춰, 자원을 절약하기 위해 복잡한 RDB/NoSQL 대신        |
-| 경량화된 TinyDB를 사용하여 사용자 정보, 대본 메타데이터 등을 관리하며 |
-| 개발.                                                                 |
-|                                                                       |
-| 추후 예선 기간 및 본선 진출 시 AWS RDS를 활용하여 확장 개발할 예정.   |
-|                                                                       |
-| **서비스 예상 UI/UX 시각화**                                          |
-|                                                                       |
-| 이미지 여기다 담으면 됨.                                              |
-+-----------------------------------------------------------------------+
+-----------------------------------------------------------------------
+ **활용 데이터 및 AI 모델**                                            
+                                                                       
+ \- 활용 데이터                                                        
+                                                                       
+ 1.  1\. 사용자 초기 녹음 음성 (보이스 클로닝 학습용)                  
+                                                                       
+     2\. 사용자 연습 녹음 음성 (정량 분석용)                           
+                                                                       
+     3\. 사용자 입력 대본 텍스트 (가이드 생성 및 발음 비교용)          
+                                                                       
+ \- AI 모델                                                            
+                                                                       
+ 4.  1\. 보이스 클로닝 (Voice Cloning): Supertone Play API             
+                                                                       
+     1.  고품질 Voice ID 생성 및 대본 기반 가이드 음성 합성.           
+                                                                       
+     2\. STT (Speech-to-Text): returnzero RTZR STT API (Sommers)       
+                                                                       
+     1.  사용자 연습 음성을 텍스트로 변환                              
+                                                                       
+ **서비스 방법**                                                       
+                                                                       
+ 1\. 온보딩 및 로그인 (Onboarding & Login/Logout)                      
+                                                                       
+ 6.  서비스 핵심 기능 소개 및 JWT(JSON Web Token) 기반의 사용자 인증   
+     처리.                                                             
+                                                                       
+ 2\. 보이스클로닝 녹음 (Voice Cloning Page)                            
+                                                                       
+ 7.  고품질의 음성 데이터 확보가 핵심.                                 
+                                                                       
+     단순 녹음이 아닌, 시스템이 제공하는 기준 음성(적절한 빠르기,      
+     높낮이)을 사용자가 듣고 따라 녹음하도록 유도.                     
+                                                                       
+ 3\. 발표 업로드 (Main Page)                                           
+                                                                       
+ 9.  사용자가 연습하고자 하는 발표 대본(스크립트)을 텍스트로           
+     입력하거나 파일로 업로드.                                         
+                                                                       
+ 4\. 가이드 생성 및 연습 (Main Page - Practice):                       
+                                                                       
+ 10. 시스템이 업로드된 대본과 사용자의 Voice ID를 결합하여 가이드 음성 
+     파일을 생성 (AWS S3 저장).                                        
+                                                                       
+     사용자는 이 가이드 음성을 들으며 연습 음성을 녹음.                
+                                                                       
+ 5\. 정량 분석 리포트 (Main Page - Feedback)                           
+                                                                       
+ 12. 녹음 완료 시, 시스템이 이하의 핵심 분석 로직 및 구현 원리에 따라  
+     연습 음성을 분석하여 4대 지표 리포트를 제공.                      
+                                                                       
+ **적용 기술**                                                         
+                                                                       
+ Frontend                                                              
+                                                                       
+ \- React (PC/모바일 반응형 웹 퍼블리싱)                               
+                                                                       
+ Backend                                                               
+                                                                       
+ \- FastAPI (Python 기반 고성능 API 서버)                              
+                                                                       
+ \- FastDTW (시계열 데이터간의 유사도 파악을 위한 Python 라이브러리)   
+                                                                       
+ \- Parselmouth (Praat 소프트웨어 Python 라이브러리)                   
+                                                                       
+ \- Librosa (오디오 신호처리를 위한 Python 라이브러리)                 
+                                                                       
+ \- Difflib (문자열 유사도 비교를 위한 Python 라이브러리)              
+                                                                       
+ Database                                                              
+                                                                       
+ \- AWS RDS (사용자 정보, 대본 메타데이터 등 관리)                     
+                                                                       
+ Infra                                                                 
+                                                                       
+ \- AWS EC2 (서버 배포), AWS S3 (음성 파일 등 스토리지)                
+                                                                       
+ AI (Core)                                                             
+                                                                       
+ \- Supertone Play (Voice Cloning), returnzero RTZR STT (STT)          
+                                                                       
+ Auth                                                                  
+                                                                       
+ \- JWT (사용자 인증)                                                  
+                                                                       
+ **핵심 분석 로직 및 구현 원리**                                       
+                                                                       
+ 외부 AI API와 Python 코드를 결합하여 4대 지표를 아래의 방식으로 산출. 
+                                                                       
+ \- 구간별 정밀 분석                                                   
+                                                                       
+ STT 엔진(ReturnZero)에서 반환된 단어별 타임스탬프를 기준으로 오디오   
+ 파일을 슬라이싱하여                                                   
+                                                                       
+ 특정 단어에서의 음정과 볼륨 변화를 별개로 측정 가능하게 함.           
+                                                                       
+ \- 음향 지표 정량화                                                   
+                                                                       
+ 음정 : DTW, Parselmouth 라이브러리를 사용해 오디오의 프레임별         
+ 주파수를 분석하고, 무성음(0Hz) 구간을 제외한 유성음 구간의 평균 F0를  
+ 계산하여 음높이 도출.                                                 
+                                                                       
+ 음량 : 음량 평준화 전처리 후 Librosa 라이브러리를 통해 오디오 파형의  
+ RMS(Root Mean Square) 값을 계산하여 발성의 에너지 크기 수치화.        
+                                                                       
+ 말 빠르기 : STT엔진으로 도출한 음성 지속 시간과 공백을 제외한 대본의  
+ 실질 음절 수를 연산하여 분당 발화 속도 측정.                          
+                                                                       
+ 발음 정확도 : Difflib 라이브러리를 활용, 원본 대본과 사용자 발화 간의 
+ 텍스트 유사도를 비교하여 정확, 오발음, 누락 여부를 단어 단위로 판별.  
+                                                                       
+ **창의성 및 구현 가능성**                                             
+                                                                       
+ 1\. 창의성                                                            
+                                                                       
+ \- 진단을 넘어 맞춤형 처방 제공 **:** 대부분의 스피치 앱이 \'당신은   
+ 말이 빠릅니다\'라는 진단에 그치는 반면, SFITZ는 \'이 대본은 이 정도   
+ 속도로 읽어야 합니다\'라는 내 목소리 기반의 최적 예시를 AI로 생성하여 
+ 제공.                                                                 
+                                                                       
+ \- 심리적 저항감 해소 :** **타인의 모범 음성이나 기계음이 아닌,       
+ 자신의 가장 이상적인 목소리를 가이드로 사용. 이는 사용자의 심리적     
+ 저항감을 최소화하고, \'나도 이렇게 할 수 있다\'는 동기를 부여하여     
+ 연습 몰입도를 극대화.                                                 
+                                                                       
+ 2\. 구현 가능성                                                       
+                                                                       
+ \- 검증된 상용 AI API 활용                                            
+                                                                       
+ Supertone Play, returnzero RTZR STT 등 이미 상용화되어 성능이 검증된  
+ AI API를 활용. 복잡한 AI 모델을 직접 개발하는 리스크 없이, 핵심       
+ 기능인 \'음성 합성\'과 \'음성 인식\'을 안정적으로 구현.               
+                                                                       
+ \- 효율적인 개발 스택                                                 
+                                                                       
+ Backend (FastAPI) : Python 기반으로 AI API 연동(HTTP 요청)에          
+ 최적화되어 있으며, 비동기 처리를 통해 다수의 음성 분석 요청을         
+ 효율적으로 처리.                                                      
+                                                                       
+ Infra (AWS EC2/S3) : 표준화된 클라우드 인프라를 사용. EC2는 FastAPI   
+ 서버를, S3는 사용자의 녹음 파일, 생성된 가이드 음성 등 대용량 오디오  
+ 파일을 안정적으로 저장/관리하는 데 사용.                              
+                                                                       
+ \- 확장성을 고려한 DB 설계 (AWS RDS)                                  
+                                                                       
+ 공모전 단계에 맞춰, 자원을 절약하기 위해 복잡한 RDB/NoSQL 대신        
+ 경량화된 TinyDB를 사용하여 사용자 정보, 대본 메타데이터 등을 관리하며 
+ 개발.                                                                 
+                                                                       
+ 추후 예선 기간 및 본선 진출 시 AWS RDS를 활용하여 확장 개발할 예정.   
+                                                                       
+ **서비스 예상 UI/UX 시각화**                                          
+                                                                       
+ 이미지 여기다 담으면 됨.                                              
+-----------------------------------------------------------------------
 
 **6. 기대효과**
 
-+-----------------------------------------------------------------------+
-| **사회적 파급 효과**                                                  |
-|                                                                       |
-| \- 교육 기회 확대 : 경제적/지리적 제약으로 스피치 교육을 받지 못했던  |
-| 이들에게 합리적인 비용으로 전문적인 교육 접근성을 제공.               |
-|                                                                       |
-| \- 역량 상향 평준화 : 발표 불안 해소 및 개인의 커뮤니케이션 능력      |
-| 향상을 통해 사회 전반의 소통 역량을 상향 평준화하는 데 기여.          |
-|                                                                       |
-| **경제적 파급 효과**                                                  |
-|                                                                       |
-| \- 개인 경쟁력 강화 : 취업 면접, 직무 발표, 입시 등 중요한 순간에     |
-| 경쟁력을 확보하여 개인의 경제 활동에 긍정적인 영향.                   |
-|                                                                       |
-| \- B2B 시장 확장 : 기업 내 임직원 프레젠테이션 교육, 신입사원 연수,   |
-| 사내 강사 육성 프로그램 등에 솔루션(SaaS) 형태로 제공하여 교육 비용   |
-| 절감 및 효율화를 유도.                                                |
-+-----------------------------------------------------------------------+
+-----------------------------------------------------------------------
+ **사회적 파급 효과**                                                  
+                                                                       
+ \- 교육 기회 확대 : 경제적/지리적 제약으로 스피치 교육을 받지 못했던  
+ 이들에게 합리적인 비용으로 전문적인 교육 접근성을 제공.               
+                                                                       
+ \- 역량 상향 평준화 : 발표 불안 해소 및 개인의 커뮤니케이션 능력      
+ 향상을 통해 사회 전반의 소통 역량을 상향 평준화하는 데 기여.          
+                                                                       
+ **경제적 파급 효과**                                                  
+                                                                       
+ \- 개인 경쟁력 강화 : 취업 면접, 직무 발표, 입시 등 중요한 순간에     
+ 경쟁력을 확보하여 개인의 경제 활동에 긍정적인 영향.                   
+                                                                       
+ \- B2B 시장 확장 : 기업 내 임직원 프레젠테이션 교육, 신입사원 연수,   
+ 사내 강사 육성 프로그램 등에 솔루션(SaaS) 형태로 제공하여 교육 비용   
+ 절감 및 효율화를 유도.                                                
+-----------------------------------------------------------------------
